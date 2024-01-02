@@ -13,34 +13,29 @@ The C++ code utilizes basic input/output and file handling functions. Here's a b
 using namespace std;
 
 int main() {
-    // Set Russian locale for proper character handling
     setlocale(LC_ALL, "ru");
 
-    // Constants and variables
     const string NEW_LINE = "\n";
     int numberMenu;
     string loginPassword, username, password;
     string menu[2] = {"Вход в аккаунт", "Регистрация"};
 
-    // Display menu options
     cout << "Система входа и регистрации" << endl;
     for (int i = 0; i < 2; i++) {
         cout << i + 1 << ". " << menu[i] << endl;
     }
 
-    // User selection
     cout << "Выберите действие из представленного списка выше: ";
     cin >> numberMenu;
 
-    // Login
     if (numberMenu == 1) {
         // Code for logging into an account
     }
-    // Registration
+
     else if (numberMenu == 2) {
         // Code for user registration
     }
-    // Invalid menu option
+
     else {
         cout << "ОШИБКА: Данного пункта нет в списке программы...";
     }
